@@ -1,7 +1,7 @@
 CREATE TYPE gig_status AS ENUM ('OPEN', 'IN_PROGRESS', 'COMPLETED', 'CANCELLED');
 
 CREATE TABLE gigs (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    id UUID PRIMARY KEY,
     client_id UUID NOT NULL REFERENCES users(id),
     title VARCHAR(150) NOT NULL,
     description TEXT NOT NULL,
