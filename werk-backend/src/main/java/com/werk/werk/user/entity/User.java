@@ -1,4 +1,4 @@
-package com.werk.werk.user;
+package com.werk.werk.user.entity;
 
 
 import java.math.BigDecimal;
